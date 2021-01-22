@@ -8,7 +8,7 @@ const User = require("../models/User");
 const { isLoggedIn } = require("../config/auth");
 //Register
 router.get("/register", (req, res) => {
-  res.render("Register");
+  res.render("register");
 });
 
 router.post("/register", (req, res) => {
