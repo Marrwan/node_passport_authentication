@@ -17,7 +17,7 @@ require("./config/passport")(passport);
 
 mongoose
   .connect(db, { useNewUrlParser: true, useUnifiedTopology: true })
-  .then(() => console.log("Connected"))
+  .then()
   .catch((err) => console.log(err));
 
 //EJS
