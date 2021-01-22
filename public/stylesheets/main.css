@@ -1,0 +1,26 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: url(https://media.istockphoto.com/photos/green-leaf-with-dew-on-dark-nature-background-picture-id1050634172?k=6&m=1050634172&s=612x612&w=0&h=C6CWho9b4RDhCqvaivYOLV2LK6FzygYpAyLPBlF1i2c=) no-repeat;
+    background-size: cover;
+}
+.glass_box{
+background: rgba( 3, 242, 3, 0 );
+box-shadow: 0 8px 32px 0 rgba(31, 135, 100, 0.37);
+backdrop-filter: blur( 1.0px );
+-webkit-backdrop-filter: blur( 1.0px );
+border-radius: 10px;
+/* border: 1px solid rgba( 255, 255, 255, 0.18 ); */
+}
+.fas, h1{
+    color: #6aecc3;
+}
+p, label{
+    color: whitesmoke;
+}
+a{
+    color: magenta;
+}
