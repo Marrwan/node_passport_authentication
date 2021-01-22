@@ -36,6 +36,9 @@
     "dev": "nodemon app.js",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install npm && run build"
   },
+  "engines": {
+    "node": "12.16.2"
+},
   "author": "",
   "license": "ISC"
 }
