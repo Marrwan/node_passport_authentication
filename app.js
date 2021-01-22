@@ -5,11 +5,11 @@ const flash = require("connect-flash");
 const session = require("express-session");
 const app = express();
 const passport = require("passport");
-const path = require('path');
+const path = require("path");
 
+require('dotenv').config()
 //Database
-const db = require("./config/keys").mongoURI;
-
+const db = process.env.mongoURI;
 // passport config
 require("./config/passport")(passport);
 
@@ -20,8 +20,6 @@ mongoose
   .then(() => console.log("Connected"))
   .catch((err) => console.log(err));
 
-
-
 //EJS
 app.use(expressLayouts);
 app.set("view engine", "ejs");
@@ -30,7 +28,7 @@ app.use(flash());
 //BodyParser
 app.use(express.urlencoded({ extended: false }));
 //public
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, "public")));
 // Express session
 
 app.use(
